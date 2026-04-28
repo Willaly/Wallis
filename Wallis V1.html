@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wallis Images Académie — Formations Photo, Vidéo & Retouche · Marseille</title>
+<meta name="description" content="L'académie de l'agence Wallis (Marseille, depuis 1989). Formations professionnelles photo, vidéo, retouche dispensées par les photographes qui couvrent l'OM, le Marseille-Cassis et les plus grands événements du Sud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #0A0E14;
+    --bg-dark-2: #11161F;
+    --surface: #FFFFFF;
+    --surface-soft: #F5F6F8;
+    --surface-border: #E6E8EC;
+    --accent: #2DD4BF;
+    --accent-deep: #0D9488;
+    --accent-glow: rgba(45, 212, 191, 0.18);
+    --text: #0A0E14;
+    --text-muted: #5A6470;
+    --text-on-dark: #E8EAEE;
+    --text-on-dark-muted: #8A93A1;
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --shadow-card: 0 1px 2px rgba(10,14,20,0.04), 0 8px 24px rgba(10,14,20,0.06);
+    --shadow-card-hover: 0 4px 12px rgba(10,14,20,0.08), 0 24px 48px rgba(10,14,20,0.12);
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--surface);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- HEADER ---------- */
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--bg-dark);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: var(--text-on-dark);
+  }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 0;
+  }
+  .logo {
+    font-family: var(--font-display);
+    font-size: 22px; font-weight: 600; letter-spacing: -0.01em;
+  }
+  .logo .accent { color: var(--accent); font-weight: 500; font-style: italic; }
+  .nav-links { display: flex; gap: 36px; }
+  .nav-links a {
+    font-size: 14px; font-weight: 500;
+    color: var(--text-on-dark-muted);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+  .nav-cta {
+    background: var(--accent);
+    color: var(--bg-dark);
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    font-weight: 600; font-size: 14px;
+    transition: transform 0.2s;
+  }
+  .nav-cta:hover { transform: translateY(-1px); }
+  .nav-toggle { display: none; background: none; border: 0; color: var(--text-on-dark); cursor: pointer; }
+
+  @media (max-width: 860px) {
+    .nav-links, .nav-cta { display: none; }
+    .nav-toggle { display: block; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    background: var(--bg-dark);
+    color: var(--text-on-dark);
+    padding: 110px 0 130px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 800px 400px at 80% 20%, var(--accent-glow), transparent 60%),
+      radial-gradient(ellipse 600px 400px at 10% 80%, rgba(45,212,191,0.08), transparent 70%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    position: relative;
+    display: grid; grid-template-columns: 1.2fr 1fr;
+    gap: 60px; align-items: center;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 500; letter-spacing: 0.05em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .hero-eyebrow::before {
+    content: ''; width: 28px; height: 1px; background: var(--accent);
+  }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0 0 24px;
+  }
+  .hero h1 em {
+    font-style: italic; color: var(--accent); font-weight: 500;
+  }
+  .hero p.lead {
+    font-size: 18px; color: var(--text-on-dark-muted);
+    max-width: 540px; margin: 0 0 36px;
+  }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 24px; border-radius: var(--radius-sm);
+    font-weight: 600; font-size: 15px;
+    border: 0; cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary { background: var(--accent); color: var(--bg-dark); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(45,212,191,0.3); }
+  .btn-ghost {
+    background: transparent; color: var(--text-on-dark);
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.06); }
+  .btn-dark { background: var(--bg-dark); color: white; }
+
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 4/5;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #1a2332 0%, #0F172A 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero-visual::after {
+    content: '[ visuel à fournir — photo Laurent en formation ]';
+    color: var(--text-on-dark-muted);
+    font-size: 12px; padding: 24px; text-align: center;
+  }
+
+  @media (max-width: 860px) {
+    .hero { padding: 70px 0 80px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { aspect-ratio: 16/10; }
+  }
+
+  /* ---------- TRUST BAND ---------- */
+  .trust {
+    background: var(--bg-dark-2);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: var(--text-on-dark);
+  }
+  .trust-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    padding: 36px 0;
+  }
+  .trust-item { text-align: center; padding: 0 12px; }
+  .trust-num {
+    font-family: var(--font-display);
+    font-size: 32px; font-weight: 500;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+  .trust-label {
+    font-size: 13px; color: var(--text-on-dark-muted);
+    margin-top: 4px;
+  }
+  @media (max-width: 720px) {
+    .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section.block { padding: 100px 0; }
+  .section-head { text-align: center; max-width: 720px; margin: 0 auto 60px; }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+    color: var(--accent-deep); text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .section-head h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(34px, 4.5vw, 52px);
+    line-height: 1.1; letter-spacing: -0.02em;
+    margin: 0 0 20px;
+  }
+  .section-head h2 em { font-style: italic; color: var(--accent-deep); font-weight: 500; }
+  .section-head p {
+    font-size: 17px; color: var(--text-muted); margin: 0;
+  }
+
+  /* ---------- FORMATIONS GRID ---------- */
+  .formations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 1000px) { .formations-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .formations-grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-card);
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+  .card-image {
+    position: relative;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #E6F7F4 0%, #D0EDE7 100%);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent-deep);
+    font-size: 11px; text-align: center; padding: 16px;
+  }
+  .card-image .badge-cat {
+    position: absolute; top: 14px; left: 14px;
+    background: var(--accent); color: var(--bg-dark);
+    font-size: 11px; font-weight: 600;
+    padding: 5px 12px; border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+  .card-image .badge-level {
+    position: absolute; top: 14px; right: 14px;
+    background: rgba(255,255,255,0.95);
+    color: var(--text);
+    font-size: 11px; font-weight: 600;
+    padding: 5px 12px; border-radius: 999px;
+  }
+  .card-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+  .card h3 {
+    font-family: var(--font-display);
+    font-weight: 500; font-size: 22px;
+    line-height: 1.2; letter-spacing: -0.01em;
+    margin: 0 0 10px;
+  }
+  .card-desc {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 0 0 18px;
+    flex: 1;
+  }
+  .card-meta {
+    display: flex; gap: 16px;
+    padding-top: 18px;
+    border-top: 1px solid var(--surface-border);
+    font-size: 13px; color: var(--text-muted);
+  }
+  .card-meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .card-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 20px;
+  }
+  .card-price {
+    font-family: var(--font-display);
+    font-size: 26px; font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .card-price small {
+    font-family: var(--font-body);
+    font-size: 13px; color: var(--text-muted); font-weight: 500;
+    margin-left: 4px;
+  }
+  .card-cta {
+    width: 40px; height: 40px;
+    background: var(--bg-dark); color: white;
+    border-radius: 999px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .card:hover .card-cta { background: var(--accent-deep); }
+
+  .card-bonus {
+    background: var(--surface-soft);
+    margin: 0 -24px -24px;
+    padding: 14px 24px;
+    font-size: 12px; color: var(--accent-deep);
+    font-weight: 600;
+    border-top: 1px solid var(--surface-border);
+  }
+
+  /* ---------- DRONE WAITLIST ---------- */
+  .waitlist {
+    background: linear-gradient(135deg, #11161F 0%, #1a2332 100%);
+    color: var(--text-on-dark);
+    border-radius: var(--radius-lg);
+    padding: 60px;
+    margin: 60px 0 0;
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center;
+    border: 1px solid rgba(255,255,255,0.08);
+    position: relative; overflow: hidden;
+  }
+  .waitlist::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 600px 300px at 90% 50%, var(--accent-glow), transparent 70%);
+    pointer-events: none;
+  }
+  .waitlist-content { position: relative; }
+  .waitlist .eyebrow { color: var(--accent); }
+  .waitlist h3 {
+    font-family: var(--font-display);
+    font-size: 32px; font-weight: 400;
+    line-height: 1.15; letter-spacing: -0.02em;
+    margin: 0 0 16px;
+  }
+  .waitlist h3 em { font-style: italic; color: var(--accent); }
+  .waitlist p { color: var(--text-on-dark-muted); margin: 0 0 24px; max-width: 480px; }
+  .waitlist-form { display: flex; gap: 10px; flex-wrap: wrap; position: relative; }
+  .waitlist-form input {
+    flex: 1; min-width: 220px;
+    padding: 14px 18px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-sm);
+    color: white; font-family: inherit; font-size: 15px;
+    outline: none;
+  }
+  .waitlist-form input::placeholder { color: var(--text-on-dark-muted); }
+  .waitlist-form input:focus { border-color: var(--accent); }
+  @media (max-width: 860px) { .waitlist { padding: 36px; grid-template-columns: 1fr; } }
+
+  /* ---------- ABOUT ---------- */
+  .about {
+    background: var(--surface-soft);
+  }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center;
+  }
+  .about-visual {
+    aspect-ratio: 4/5;
+    background: linear-gradient(135deg, #1a2332 0%, #0A0E14 100%);
+    border-radius: var(--radius-lg);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-on-dark-muted); font-size: 12px;
+    padding: 24px; text-align: center;
+  }
+  .about h2 {
+    font-family: var(--font-display);
+    font-weight: 400; font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1; letter-spacing: -0.02em;
+    margin: 0 0 24px;
+  }
+  .about h2 em { font-style: italic; color: var(--accent-deep); }
+  .about p { font-size: 17px; color: var(--text-muted); margin: 0 0 20px; }
+  .about-sig {
+    font-family: var(--font-display);
+    font-size: 20px; font-style: italic;
+    color: var(--text); margin-top: 32px;
+  }
+  .about-sig small {
+    display: block; font-style: normal; font-family: var(--font-body);
+    font-size: 13px; color: var(--text-muted); margin-top: 4px;
+  }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  /* Bio Laurent responsive (grid inline 1fr 2fr dans la section agence) */
+  @media (max-width: 860px) {
+    section#about > .container > div:last-child {
+      grid-template-columns: 1fr !important;
+      gap: 32px !important;
+      margin-top: 60px !important;
+    }
+  }
+
+  /* ---------- CTA BAND ---------- */
+  .cta-band {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta-band::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 800px 400px at 50% 0%, rgba(255,255,255,0.15), transparent 70%);
+  }
+  .cta-card {
+    position: relative;
+    max-width: 720px; margin: 0 auto;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius-lg);
+    padding: 60px 40px;
+  }
+  .cta-card h2 {
+    font-family: var(--font-display);
+    font-weight: 400; font-size: clamp(32px, 4.5vw, 44px);
+    line-height: 1.1; letter-spacing: -0.02em;
+    margin: 0 0 16px; color: white;
+  }
+  .cta-card p { color: rgba(255,255,255,0.9); margin: 0 0 32px; font-size: 17px; }
+  .cta-card .btn-primary { background: white; color: var(--bg-dark); }
+  .cta-card .btn-ghost { color: white; border-color: rgba(255,255,255,0.4); }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--bg-dark);
+    color: var(--text-on-dark);
+    padding: 80px 0 40px;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-brand h4 {
+    font-family: var(--font-display);
+    font-weight: 500; font-size: 22px; margin: 0 0 16px;
+  }
+  .footer-brand h4 .accent { color: var(--accent); font-style: italic; }
+  .footer-brand p { color: var(--text-on-dark-muted); font-size: 14px; max-width: 320px; }
+  .footer-col h5 {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+    color: var(--accent); text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+  .footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .footer-col a {
+    font-size: 14px; color: var(--text-on-dark-muted);
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--accent); }
+  .footer-bottom {
+    padding-top: 32px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    font-size: 13px; color: var(--text-on-dark-muted);
+  }
+  .footer-bottom a { color: var(--text-on-dark-muted); }
+  .footer-bottom a:hover { color: var(--accent); }
+  @media (max-width: 860px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+
+  /* ---------- PLACEHOLDER FLAG ---------- */
+  .todo {
+    display: inline-block;
+    background: #FEF3C7; color: #92400E;
+    padding: 2px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: 600;
+    font-family: var(--font-body);
+  }
+
+  /* ---------- ANIMATIONS ---------- */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero h1, .hero p.lead, .hero-ctas { animation: fadeUp 0.8s ease both; }
+  .hero p.lead { animation-delay: 0.1s; }
+  .hero-ctas { animation-delay: 0.2s; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container nav">
+    <div class="logo">Wallis<span class="accent">Images</span></div>
+    <nav class="nav-links">
+      <a href="#" class="active">Accueil</a>
+      <a href="#formations">Formations</a>
+      <a href="#about">L'agence</a>
+      <a href="https://www.wallis.fr" target="_blank" rel="noopener">Banque d'images ↗</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Réserver un échange</a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow">Marseille · Depuis 1989</div>
+      <h1>L'image, enseignée<br>par ceux qui en <em>vivent.</em></h1>
+      <p class="lead">L'académie de <a href="https://www.wallis.fr" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;">l'agence Wallis</a>, photographes officiels de l'OM, du Marseille-Cassis et des plus grands événements du Sud. Formations courtes, en petits groupes, par des pros en activité.</p>
+      <div class="hero-ctas">
+        <a href="#formations" class="btn btn-primary">
+          Découvrir les formations
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Parler à un conseiller</a>
+      </div>
+    </div>
+    <div class="hero-visual"></div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <div class="trust-num">1989</div>
+      <div class="trust-label">l'agence Wallis fondée</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">37<small style="font-size:18px;">ans</small></div>
+      <div class="trust-label">d'expertise terrain</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">6</div>
+      <div class="trust-label">formations au catalogue</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num"><span class="todo">Qualiopi</span></div>
+      <div class="trust-label">à confirmer</div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATIONS -->
+<section class="block" id="formations">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Nos formations</div>
+      <h2>Des compétences <em>concrètes</em>, applicables dès le lundi matin.</h2>
+      <p>Six parcours conçus pour les professionnels et les passionnés exigeants. Petits groupes, matériel pro, cas pratiques.</p>
+    </div>
+
+    <div class="formations-grid">
+
+      <!-- 1. Photo studio -->
+      <article class="card">
+        <div class="card-image">
+          <span class="badge-cat">Photo</span>
+          <span class="badge-level">2 jours</span>
+          [ visuel : setup studio ]
+        </div>
+        <div class="card-body">
+          <h3>Photo studio</h3>
+          <p class="card-desc">Maîtriser l'éclairage artificiel, le portrait studio et la direction de modèle dans un environnement contrôlé.</p>
+          <div class="card-meta">
+            <span>⏱ 2 jours · 14h</span>
+            <span>👥 Max 6</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">900€ <small>HT</small></div>
+            <a href="#" class="card-cta" aria-label="Voir la formation">→</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Photo reportage -->
+      <article class="card">
+        <div class="card-image">
+          <span class="badge-cat">Photo</span>
+          <span class="badge-level">2 jours</span>
+          [ visuel : reportage terrain ]
+        </div>
+        <div class="card-body">
+          <h3>Photo reportage</h3>
+          <p class="card-desc">Capturer l'instant, raconter une histoire en images. Lumière naturelle, cadrage narratif, gestion du flux.</p>
+          <div class="card-meta">
+            <span>⏱ 2 jours · 14h</span>
+            <span>👥 Max 6</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">900€ <small>HT</small></div>
+            <a href="#" class="card-cta" aria-label="Voir la formation">→</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Stage boudoir -->
+      <article class="card">
+        <div class="card-image">
+          <span class="badge-cat">Stage</span>
+          <span class="badge-level">1 jour</span>
+          [ visuel : boudoir ]
+        </div>
+        <div class="card-body">
+          <h3>Stage boudoir</h3>
+          <p class="card-desc">Une journée immersive pour apprivoiser l'esthétique boudoir : lumière, posing, intimité, post-traitement.</p>
+          <div class="card-meta">
+            <span>⏱ 1 jour · 7h</span>
+            <span>🎁 Tirage offert</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">250€ <small>TTC</small></div>
+            <a href="#" class="card-cta" aria-label="Voir la formation">→</a>
+          </div>
+          <div class="card-bonus">+ 1 impression style tableau offerte</div>
+        </div>
+      </article>
+
+      <!-- 4. Retouche -->
+      <article class="card">
+        <div class="card-image">
+          <span class="badge-cat">Retouche</span>
+          <span class="badge-level">5 jours</span>
+          [ visuel : Photoshop/Lightroom ]
+        </div>
+        <div class="card-body">
+          <h3>Retouche Photoshop &amp; Lightroom</h3>
+          <p class="card-desc">Workflow complet : tri, développement, retouche avancée, export. Niveau pro en une semaine.</p>
+          <div class="card-meta">
+            <span>⏱ 5 jours · 35h</span>
+            <span>👥 Max 6</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">1 490€ <small>HT</small></div>
+            <a href="#" class="card-cta" aria-label="Voir la formation">→</a>
+          </div>
+          <div class="card-bonus">+ 1 an Adobe Photoshop &amp; Lightroom inclus</div>
+        </div>
+      </article>
+
+      <!-- 5. Vidéo prod -->
+      <article class="card">
+        <div class="card-image">
+          <span class="badge-cat">Vidéo</span>
+          <span class="badge-level">2 jours</span>
+          [ visuel : tournage vidéo ]
+        </div>
+        <div class="card-body">
+          <h3>Vidéo : production</h3>
+          <p class="card-desc">De l'écriture au tournage. Cadrage, son, lumière, direction. Pour les formats courts pro et RS.</p>
+          <div class="card-meta">
+            <span>⏱ 2 jours · 14h</span>
+            <span>👥 Max 6</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">1 290€ <small>HT</small></div>
+            <a href="#" class="card-cta" aria-label="Voir la formation">→</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Montage Premiere -->
+      <article class="card">
+        <div class="card-image">
+          <span class="badge-cat">Vidéo</span>
+          <span class="badge-level">5 jours</span>
+          [ visuel : timeline Premiere ]
+        </div>
+        <div class="card-body">
+          <h3>Montage Adobe Premiere</h3>
+          <p class="card-desc">Maîtriser Premiere Pro : montage, étalonnage, mixage son, export multi-formats. Du débutant au confirmé.</p>
+          <div class="card-meta">
+            <span>⏱ 5 jours · 35h</span>
+            <span>👥 Max 6</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">1 490€ <small>HT</small></div>
+            <a href="#" class="card-cta" aria-label="Voir la formation">→</a>
+          </div>
+          <div class="card-bonus">+ 1 an Adobe Premiere Pro inclus</div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- DRONE WAITLIST -->
+    <div class="waitlist">
+      <div class="waitlist-content">
+        <div class="eyebrow">Bientôt disponible</div>
+        <h3>Formation <em>télépilote drone</em> CATS &amp; pratique STS-01/02</h3>
+        <p>Nous préparons une offre conforme à la nouvelle réglementation européenne entrée en vigueur en 2026. Inscrivez-vous à la liste d'attente pour être prévenu en avant-première et bénéficier d'un tarif de lancement.</p>
+        <form class="waitlist-form" onsubmit="event.preventDefault(); alert('Merci ! Nous vous tiendrons informé. (à connecter à Brevo)')">
+          <input type="email" placeholder="votre@email.com" required>
+          <button type="submit" class="btn btn-primary">Me prévenir</button>
+        </form>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENCE WALLIS -->
+<section class="block" id="about" style="background: var(--bg-dark); color: var(--text-on-dark); position: relative; overflow: hidden;">
+  <div style="position: absolute; inset: 0; background: radial-gradient(ellipse 800px 400px at 20% 30%, var(--accent-glow), transparent 60%); pointer-events: none;"></div>
+  <div class="container" style="position: relative;">
+    <div class="about-grid">
+      <div>
+        <div class="eyebrow" style="color: var(--accent);">L'agence Wallis · Marseille</div>
+        <h2 style="color: white;">Une école qui n'est pas <em style="color: var(--accent);">qu'</em>une école.</h2>
+        <p style="color: var(--text-on-dark-muted);">Wallis est <strong style="color: white; font-weight: 600;">la plus grande agence de contenus photo et vidéo du sud de la France</strong>, fondée en 1989. Nos photographes couvrent l'Olympique de Marseille, le Marseille-Cassis, la Grotte Cosquer et des centaines d'événements corporate, sportifs et culturels chaque année.</p>
+        <p style="color: var(--text-on-dark-muted);">L'académie est l'extension naturelle de cette expertise : transmettre, sur le terrain et en studio, ce que 37 ans de pratique professionnelle nous ont appris.</p>
+        <p style="color: var(--text-on-dark-muted);">Bonus : les meilleurs stagiaires peuvent rejoindre <a href="https://www.wallis.fr/espace-photographe/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline; text-underline-offset: 4px;">l'espace contributeurs Wallis</a> et commercialiser leurs images via notre banque.</p>
+        <div style="display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap;">
+          <a href="https://www.wallis.fr" target="_blank" rel="noopener" class="btn btn-primary">
+            Découvrir l'agence Wallis
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Échanger avec Laurent</a>
+        </div>
+      </div>
+      <div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #1a2332, #11161F); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center; color: var(--text-on-dark-muted); font-size: 11px;">[ photo OM ]</div>
+          <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #1a2332, #11161F); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center; color: var(--text-on-dark-muted); font-size: 11px; margin-top: 32px;">[ photo Marseille-Cassis ]</div>
+          <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #1a2332, #11161F); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center; color: var(--text-on-dark-muted); font-size: 11px;">[ photo corporate ]</div>
+          <div style="aspect-ratio: 3/4; background: linear-gradient(135deg, #1a2332, #11161F); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center; color: var(--text-on-dark-muted); font-size: 11px; margin-top: 32px;">[ photo Cosquer ]</div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; justify-content: center;">
+          <span style="font-size: 11px; color: var(--text-on-dark-muted); padding: 6px 12px; background: rgba(255,255,255,0.05); border-radius: 999px; border: 1px solid rgba(255,255,255,0.1);">Olympique de Marseille</span>
+          <span style="font-size: 11px; color: var(--text-on-dark-muted); padding: 6px 12px; background: rgba(255,255,255,0.05); border-radius: 999px; border: 1px solid rgba(255,255,255,0.1);">Marseille-Cassis</span>
+          <span style="font-size: 11px; color: var(--text-on-dark-muted); padding: 6px 12px; background: rgba(255,255,255,0.05); border-radius: 999px; border: 1px solid rgba(255,255,255,0.1);">Grotte Cosquer</span>
+          <span style="font-size: 11px; color: var(--text-on-dark-muted); padding: 6px 12px; background: rgba(255,255,255,0.05); border-radius: 999px; border: 1px solid rgba(255,255,255,0.1);">+ 100 clients corporate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAURENT BIO -->
+    <div style="margin-top: 100px; padding-top: 60px; border-top: 1px solid rgba(255,255,255,0.08); display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: center;">
+      <div style="aspect-ratio: 1; background: linear-gradient(135deg, #1a2332, #0A0E14); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--text-on-dark-muted); font-size: 12px; padding: 24px; text-align: center; border: 1px solid rgba(255,255,255,0.08);">[ portrait Laurent Saccomano ]</div>
+      <div>
+        <div class="eyebrow" style="color: var(--accent);">Le formateur</div>
+        <h3 style="font-family: var(--font-display); font-weight: 400; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 20px; color: white;">Laurent Saccomano</h3>
+        <p style="color: var(--text-on-dark-muted);"><span class="todo">[bio à valider avec Laurent]</span> Photographe professionnel depuis plus de XX ans, fondateur de l'agence Wallis. Couvre régulièrement les événements sportifs et corporate du Sud de la France. Forme depuis XX ans des photographes amateurs et professionnels qui souhaitent passer un cap.</p>
+        <p style="color: var(--text-on-dark-muted); font-style: italic; font-family: var(--font-display); font-size: 18px; margin-top: 24px;">« Je n'enseigne pas la théorie d'un livre. J'enseigne ce que je fais le lendemain matin sur le terrain. »</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band" id="contact">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Prêt à passer au niveau supérieur ?</h2>
+      <p>Réservez 20 minutes avec Laurent pour identifier la formation qui correspond à vos objectifs. Gratuit, sans engagement.</p>
+      <div class="hero-ctas" style="justify-content: center;">
+        <a href="mailto:contact@wallis-images.com" class="btn btn-primary">
+          Prendre rendez-vous
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:" class="btn btn-ghost"><span class="todo">[téléphone]</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Wallis<span class="accent">Images</span> Académie</h4>
+        <p>L'extension formation de <a href="https://www.wallis.fr" target="_blank" rel="noopener" style="color: var(--accent);">l'agence Wallis</a>, plus grand fournisseur de contenus photo &amp; vidéo du sud de la France depuis 1989. Marseille &amp; région Sud.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Formations</h5>
+        <ul>
+          <li><a href="#">Photo studio</a></li>
+          <li><a href="#">Photo reportage</a></li>
+          <li><a href="#">Stage boudoir</a></li>
+          <li><a href="#">Retouche</a></li>
+          <li><a href="#">Vidéo prod</a></li>
+          <li><a href="#">Montage Premiere</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Écosystème Wallis</h5>
+        <ul>
+          <li><a href="https://www.wallis.fr" target="_blank" rel="noopener">L'agence Wallis ↗</a></li>
+          <li><a href="https://www.wallis.fr/prestations/" target="_blank" rel="noopener">Prestations ↗</a></li>
+          <li><a href="https://www.wallis.fr/espace-photographe/" target="_blank" rel="noopener">Devenir contributeur ↗</a></li>
+          <li><a href="#about">L'équipe</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>Laurent Saccomano</li>
+          <li><a href="tel:0491347515">04 91 34 75 15</a></li>
+          <li><a href="mailto:contact@wallis-images.com"><span class="todo">[email académie]</span></a></li>
+          <li><a href="#contact">Prendre rendez-vous →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Wallis Images Académie · <span class="todo">SIRET à compléter</span></div>
+      <div>
+        <a href="#">Mentions légales</a> ·
+        <a href="#">CGV</a> ·
+        <a href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
