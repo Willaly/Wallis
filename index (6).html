@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wallis Images Acad&eacute;mie &mdash; Formations Photo, Vid&eacute;o &amp; Retouche &middot; Marseille</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0E14;--bg2:#11161F;--bg3:#182030;--bdr:rgba(255,255,255,0.08);--bdr-a:rgba(45,212,191,0.3);--accent:#2DD4BF;--accent-lt:#5EEAD4;--accent-dp:#0D9488;--accent-glow:rgba(45,212,191,0.12);--w:#E8EAEE;--muted:#8A93A1;--fd:'Fraunces',Georgia,serif;--fb:'Manrope',system-ui,sans-serif;--r:16px;--rs:10px;--mx:1200px}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--fb);color:var(--w);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}.ctr{max-width:var(--mx);margin:0 auto;padding:0 24px}.page{display:none}.page.active{display:block}
+.hdr{position:sticky;top:0;z-index:100;background:rgba(10,14,20,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--bdr)}.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;position:relative}.logo{font-family:var(--fd);font-size:24px;font-weight:600;cursor:pointer}.logo em{color:var(--accent);font-style:italic;font-weight:500}.nl{display:flex;gap:28px}.nl a{font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);transition:color .2s;cursor:pointer}.nl a:hover,.nl a.active{color:var(--accent)}.nr{display:flex;gap:12px;align-items:center}
+.bo{padding:10px 20px;border:1px solid var(--bdr-a);border-radius:999px;font-size:13px;font-weight:600;color:var(--accent);cursor:pointer;transition:all .2s;background:0}.bo:hover{background:var(--accent);color:var(--bg)}.bf{padding:10px 20px;border:1px solid var(--accent);border-radius:999px;font-size:13px;font-weight:600;color:var(--bg);background:var(--accent);cursor:pointer;transition:all .2s}.bf:hover{background:var(--accent-lt)}.mt{display:none;background:0;border:0;color:var(--w);font-size:24px;cursor:pointer}@media(max-width:900px){.nl,.nr{display:none}.mt{display:block}.nl.show{display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:var(--bg);padding:24px;gap:16px;border-bottom:1px solid var(--bdr);z-index:99}}
+.ph{text-align:center;padding:80px 0 60px}.ph::after{content:'';display:block;width:40px;height:2px;background:var(--accent);margin:24px auto 0}.ey{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;display:inline-block}.ph h1{font-family:var(--fd);font-weight:400;font-size:clamp(36px,6vw,60px);line-height:1.08;margin:0 0 16px}.ph p{color:var(--muted);max-width:600px;margin:0 auto;font-size:16px}
+.hero{padding:110px 0 120px;position:relative;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 700px 400px at 70% 20%,var(--accent-glow),transparent 60%);pointer-events:none}.hero-c{position:relative;max-width:720px}.hero h1{font-family:var(--fd);font-weight:400;font-size:clamp(42px,7vw,72px);line-height:1.04;letter-spacing:-.02em;margin:0 0 28px}.hero h1 em{font-style:italic;color:var(--accent);font-weight:500}.hero .lead{font-size:18px;color:var(--muted);max-width:560px;margin:0 0 40px}.hero .lead a{color:var(--accent);text-decoration:underline;text-underline-offset:4px}.hctas{display:flex;gap:14px;flex-wrap:wrap}@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.hero h1,.hero .lead,.hctas{animation:fu .7s ease both}.hero .lead{animation-delay:.1s}.hctas{animation-delay:.2s}
+.trust{border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:36px 0}.tg{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.ti{text-align:center}.tn{font-family:var(--fb);font-size:28px;font-weight:700;color:var(--accent)}.tl{font-size:13px;color:var(--muted);margin-top:4px}@media(max-width:640px){.tg{grid-template-columns:repeat(2,1fr)}}
+section.blk{padding:100px 0}.sh{text-align:center;max-width:680px;margin:0 auto 60px}.sh h2{font-family:var(--fd);font-weight:400;font-size:clamp(32px,5vw,48px);line-height:1.1;margin:0 0 16px}.sh h2 em{font-style:italic;color:var(--accent-dp);font-weight:500}.sh p{color:var(--muted);font-size:16px;margin:0}.sh::after{content:'';display:block;width:40px;height:2px;background:var(--accent);margin:24px auto 0}
+.wg{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}@media(max-width:900px){.wg{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.wg{grid-template-columns:1fr}}.wc{border:1px solid var(--bdr);border-radius:var(--r);padding:36px 24px;text-align:center;transition:border-color .3s}.wc:hover{border-color:var(--bdr-a)}.wc .icon{font-size:32px;margin-bottom:16px;color:var(--accent)}.wc h3{font-family:var(--fd);font-size:20px;font-weight:500;margin:0 0 10px}.wc p{font-size:14px;color:var(--muted);margin:0}
+.ftbs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:48px}.ftb{padding:8px 20px;border:1px solid var(--bdr);border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:all .2s;background:0}.ftb:hover{border-color:var(--bdr-a);color:var(--accent)}.ftb.active{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.fc{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;margin-bottom:32px;transition:border-color .3s}.fc:hover{border-color:var(--bdr-a)}.fc-img{aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,var(--bg2),var(--bg3));display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;padding:20px;text-align:center}.fc-body{padding:32px;display:flex;flex-direction:column;justify-content:center}.fc-body .badge{font-size:12px;color:var(--accent);margin-bottom:12px}.fc-body h3{font-family:var(--fd);font-weight:500;font-size:26px;line-height:1.15;margin:0 0 12px}.fc-body .desc{color:var(--muted);font-size:14px;margin:0 0 18px}.fc-body .pt{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}.fc-body .pl{color:var(--muted);font-size:13px;margin:0 0 18px;padding:0;list-style:none}.fc-body .pl li{margin-bottom:4px}.fc-body .pl li::before{content:'\2022';color:var(--accent-dp);margin-right:8px}.fc-body .bonus{font-size:13px;color:var(--accent);font-style:italic;margin-bottom:18px}
+.fc-meta{display:flex;gap:24px;margin-bottom:18px;padding:14px 0;border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}.fc-meta-item{display:flex;flex-direction:column;gap:2px}.fc-meta-item .label{font-size:11px;color:var(--accent);font-weight:600}.fc-meta-item .value{font-size:14px}
+.fc-ft{display:flex;align-items:center;justify-content:space-between;margin-top:auto}.fp{font-family:var(--fb);font-size:28px;font-weight:700}.fp small{font-family:var(--fb);font-size:13px;color:var(--muted);margin-left:4px}@media(max-width:768px){.fc{grid-template-columns:1fr}.fc-img{aspect-ratio:16/9}}
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}@media(max-width:900px){.cg{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.cg{grid-template-columns:1fr}}.cs{border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;transition:border-color .3s,transform .3s;cursor:pointer}.cs:hover{border-color:var(--bdr-a);transform:translateY(-4px)}.cs-img{aspect-ratio:4/3;background:linear-gradient(135deg,var(--bg2),var(--bg3));display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;padding:16px;text-align:center;position:relative}.cs-img .bc{position:absolute;top:14px;left:14px;background:var(--accent);color:var(--bg);font-size:10px;font-weight:700;padding:4px 12px;border-radius:999px}.cs-img .bd{position:absolute;top:14px;right:14px;background:rgba(255,255,255,.9);color:var(--bg);font-size:10px;font-weight:700;padding:4px 12px;border-radius:999px}.cs-body{padding:20px}.cs-body h3{font-family:var(--fd);font-weight:500;font-size:20px;margin:0 0 8px}.cs-body p{color:var(--muted);font-size:13px;margin:0 0 16px}.cs-ft{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--bdr)}.cs-ft .pr{font-family:var(--fb);font-size:20px;font-weight:700}.cs-ft .ar{width:36px;height:36px;border-radius:999px;background:var(--bg3);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;color:var(--accent);transition:all .2s}.cs:hover .ar{background:var(--accent);color:var(--bg)}
+.teg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}@media(max-width:768px){.teg{grid-template-columns:1fr}}.tec{border:1px solid var(--bdr);border-radius:var(--r);padding:32px;transition:border-color .3s}.tec:hover{border-color:var(--bdr-a)}.tes{color:var(--accent);font-size:14px;letter-spacing:2px;margin-bottom:16px}.teq{font-size:15px;line-height:1.7;margin:0 0 24px;font-style:italic}.tea{display:flex;align-items:center;gap:12px}.tev{width:40px;height:40px;border-radius:999px;background:var(--bg3);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:18px;color:var(--accent)}.ten{font-weight:600;font-size:14px}
+.ts{border:1px solid var(--bdr);border-radius:var(--r);margin-bottom:24px;overflow:hidden}.ts-t{padding:20px 28px;font-family:var(--fd);font-size:22px;font-weight:500;border-bottom:1px solid var(--bdr)}.tr{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid var(--bdr);transition:background .2s}.tr:last-child{border-bottom:0}.tr:hover{background:var(--bg2)}.tr-i h4{font-size:15px;font-weight:600;margin:0 0 2px}.tr-i span{font-size:13px;color:var(--muted)}.tr-i .bt{font-size:11px;color:var(--accent);font-style:italic;display:block;margin-top:4px}.tr-p{font-family:var(--fb);font-size:24px;font-weight:700;color:var(--accent)}
+.bc2{border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;transition:border-color .3s,transform .3s;cursor:pointer}.bc2:hover{border-color:var(--bdr-a);transform:translateY(-4px)}.bc2-img{aspect-ratio:16/10;background:linear-gradient(135deg,var(--bg2),var(--bg3));display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px}.bc2-body{padding:20px}.bc2-meta{font-size:12px;color:var(--muted);margin-bottom:10px}.bc2-body h3{font-family:var(--fd);font-weight:500;font-size:20px;line-height:1.25;margin:0 0 10px}.bc2-body p{font-size:13px;color:var(--muted);margin:0 0 16px}.bc2-lk{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.cog{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}@media(max-width:768px){.cog{grid-template-columns:1fr}}.cob{margin-bottom:32px}.cob h3{font-family:var(--fd);font-size:22px;margin:0 0 6px}.cob p,.cob a{color:var(--muted);font-size:14px}.cob a:hover{color:var(--accent)}.ml{display:flex;gap:8px;margin-top:12px}.ml a{padding:6px 14px;border:1px solid var(--bdr);border-radius:999px;font-size:12px;color:var(--muted);transition:all .2s}.ml a:hover{border-color:var(--accent);color:var(--accent)}.fg{margin-bottom:20px}.fl{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px}.fi,.fta{width:100%;padding:14px 18px;background:var(--bg2);border:1px solid var(--bdr);border-radius:var(--rs);color:var(--w);font-family:var(--fb);font-size:15px;outline:0;transition:border-color .2s}.fi:focus,.fta:focus{border-color:var(--accent)}.fta{min-height:140px;resize:vertical}
+.stepper{display:flex;justify-content:center;gap:0;margin-bottom:48px}.step{display:flex;align-items:center}.step-c{width:40px;height:40px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:18px;border:1px solid var(--bdr);color:var(--muted);background:0}.step-c.cur{background:var(--accent);color:var(--bg);border-color:var(--accent)}.step-l{width:48px;height:2px;background:var(--bdr);margin:0 4px}.rc{border:1px solid var(--bdr-a);border-radius:var(--r);padding:24px;max-width:680px;margin:0 auto}.ritem{border:1px solid var(--bdr);border-radius:var(--rs);padding:18px;margin-bottom:12px;cursor:pointer;transition:border-color .2s;display:flex;justify-content:space-between;align-items:center}.ritem:hover{border-color:var(--bdr-a)}.ritem .sub{font-size:13px;color:var(--muted)}.ritem .rp{color:var(--accent);font-family:var(--fb);font-size:18px;font-weight:700}
+.ctab{padding:80px 0;text-align:center}.ctac{max-width:680px;margin:0 auto;border:1px solid var(--bdr-a);border-radius:var(--r);padding:60px 40px;position:relative;overflow:hidden}.ctac::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 400px 200px at 50% 0%,var(--accent-glow),transparent 70%);pointer-events:none}.ctac h2{font-family:var(--fd);font-weight:400;font-size:clamp(28px,4.5vw,42px);line-height:1.1;margin:0 0 16px;position:relative}.ctac p{color:var(--muted);font-size:16px;margin:0 0 32px;position:relative}
+.wl{border:1px solid var(--bdr-a);border-radius:var(--r);padding:48px;margin-top:48px;position:relative;overflow:hidden}.wl::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 500px 250px at 80% 50%,var(--accent-glow),transparent 70%);pointer-events:none}.wl h3{font-family:var(--fd);font-weight:400;font-size:28px;line-height:1.2;margin:0 0 12px;position:relative}.wl h3 em{color:var(--accent);font-style:italic}.wl p{color:var(--muted);max-width:500px;font-size:14px;margin:0 0 24px;position:relative}.wlf{display:flex;gap:10px;flex-wrap:wrap;position:relative}.wlf input{flex:1;min-width:200px;padding:12px 16px;background:var(--bg);border:1px solid var(--bdr);border-radius:var(--rs);color:var(--w);font-family:var(--fb);font-size:14px;outline:0}.wlf input:focus{border-color:var(--accent)}
+.wb{background:var(--bg2);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}.ar2{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.arf{font-size:11px;color:var(--muted);padding:6px 14px;background:var(--bg2);border-radius:999px;border:1px solid var(--bdr)}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}@media(max-width:768px){.team-grid{grid-template-columns:1fr}}.team-card{border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;text-align:center}.team-avatar{aspect-ratio:1;background:linear-gradient(135deg,rgba(45,212,191,.15),rgba(45,212,191,.05));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:80px;color:rgba(45,212,191,.3)}.team-card:nth-child(2) .team-avatar{background:linear-gradient(135deg,rgba(200,180,140,.15),rgba(200,180,140,.05));color:rgba(200,180,140,.3)}.team-info{padding:24px}.team-info h3{font-family:var(--fd);font-size:22px;margin:0 0 4px}.team-info .role{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:12px}.team-info p{font-size:14px;color:var(--muted);margin:0}
+footer{border-top:1px solid var(--bdr);padding:80px 0 40px}.fg2{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--bdr)}@media(max-width:860px){.fg2{grid-template-columns:1fr 1fr}.fb{grid-column:1/-1}}.fb h4{font-family:var(--fd);font-size:24px;font-weight:400;margin:0 0 12px}.fb h4 em{color:var(--accent);font-style:italic}.fb>p{color:var(--muted);font-size:14px;max-width:320px}.fc2 h5{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}.fc2 ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}.fc2 a{font-size:14px;color:var(--muted);transition:color .2s;cursor:pointer}.fc2 a:hover{color:var(--accent)}.fbot{padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:12px;color:var(--muted)}.fbot a{color:var(--muted)}.fbot a:hover{color:var(--accent)}
+.todo{display:inline-block;background:#FEF3C7;color:#92400E;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700}
+.fc-img img,.cs-img img,.bc2-img img,div[style*="aspect-ratio"] img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0}.fc-img,.cs-img,.bc2-img{position:relative}
+</style>
+</head>
+<body>
+
+<header class="hdr"><div class="ctr nav">
+<div class="logo" onclick="go('home')">Wallis<em>Images</em></div>
+<nav class="nl"><a onclick="go('home')" data-p="home">Accueil</a><a onclick="go('formations')" data-p="formations">Formations</a><a onclick="go('tarifs')" data-p="tarifs">Tarifs</a><a onclick="go('blog')" data-p="blog">Blog</a><a onclick="go('temoignages')" data-p="temoignages">T&eacute;moignages</a><a onclick="go('about')" data-p="about">&Agrave; propos</a><a onclick="go('contact')" data-p="contact">Contact</a></nav>
+<div class="nr"><a href="https://www.wallis.fr" target="_blank" class="bo">wallis.fr &nearr;</a><a onclick="go('rdv')" class="bf">S&rsquo;inscrire</a></div>
+<button class="mt" onclick="document.querySelector('.nl').classList.toggle('show')">&equiv;</button>
+</div></header>
+
+<main id="p-home" class="page active">
+<section class="hero"><div class="ctr hero-c">
+<div class="ey" style="margin-bottom:28px">Marseille &middot; Depuis 1989</div>
+<h1>L&rsquo;image, enseign&eacute;e par ceux qui en <em>vivent.</em></h1>
+<p class="lead">L&rsquo;acad&eacute;mie de <a href="https://www.wallis.fr" target="_blank">l&rsquo;agence Wallis</a>, photographes de l&rsquo;OM, du Marseille-Cassis et des plus grands &eacute;v&eacute;nements du Sud. Formations courtes, petits groupes, pros en activit&eacute;.</p>
+<div class="hctas"><a onclick="go('formations')" class="bf">D&eacute;couvrir les formations &rarr;</a><a onclick="go('contact')" class="bo">Parler &agrave; un conseiller</a></div>
+</div></section>
+
+<section class="trust"><div class="ctr tg">
+<div class="ti"><div class="tn">1989</div><div class="tl">L&rsquo;agence Wallis fond&eacute;e</div></div>
+<div class="ti"><div class="tn">37 ans</div><div class="tl">d&rsquo;expertise terrain</div></div>
+<div class="ti"><div class="tn">9</div><div class="tl">formations au catalogue</div></div>
+<div class="ti"><div class="tn"><span class="todo">Qualiopi</span></div><div class="tl">&agrave; confirmer</div></div>
+</div></section>
+
+<section class="blk"><div class="ctr">
+<div class="sh"><div class="ey">Nos formations</div><h2>Des comp&eacute;tences <em>concr&egrave;tes</em></h2><p>Neuf parcours pour les professionnels et passionn&eacute;s exigeants.</p></div>
+<div class="cg">
+<div class="cs" onclick="go('formations')"><div class="cs-img"><span class="bc">Photo</span><span class="bd">2 jours</span><img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=600&h=450&fit=crop&q=80" alt="Studio" loading="lazy"></div><div class="cs-body"><h3>Photo studio</h3><p>&Eacute;clairage, portrait, direction de mod&egrave;le.</p><div class="cs-ft"><span class="pr">900&euro;</span><span class="ar">&rarr;</span></div></div></div>
+<div class="cs" onclick="go('formations')"><div class="cs-img"><span class="bc">Vid&eacute;o</span><span class="bd">5 jours</span><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=450&fit=crop&q=80" alt="Premiere" loading="lazy"></div><div class="cs-body"><h3>Montage Premiere</h3><p>Montage, &eacute;talonnage, mixage, export.</p><div class="cs-ft"><span class="pr">1 490&euro;</span><span class="ar">&rarr;</span></div></div></div>
+<div class="cs" onclick="go('formations')"><div class="cs-img"><span class="bc">Web</span><span class="bd">2 jours</span><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop&q=80" alt="WordPress" loading="lazy"></div><div class="cs-body"><h3>WordPress par L&eacute;a</h3><p>Cr&eacute;ez votre site pro de A &agrave; Z.</p><div class="cs-ft"><span class="pr">350&euro;</span><span class="ar">&rarr;</span></div></div></div>
+</div>
+<div style="text-align:center;margin-top:40px"><a onclick="go('formations')" class="bf">Voir toutes les formations &rarr;</a></div>
+</div></section>
+
+<section class="blk"><div class="ctr">
+<div class="sh"><div class="ey">Notre engagement</div><h2>Pourquoi choisir <em>Wallis</em></h2></div>
+<div class="wg">
+<div class="wc"><div class="icon">&#128247;</div><h3>Excellence technique</h3><p>Comp&eacute;tences de haut niveau avec du mat&eacute;riel professionnel.</p></div>
+<div class="wc"><div class="icon">&#128101;</div><h3>P&eacute;dagogie sur mesure</h3><p>Petits groupes pour un accompagnement personnalis&eacute;.</p></div>
+<div class="wc"><div class="icon">&hearts;</div><h3>Passion partag&eacute;e</h3><p>Transmettre notre passion &agrave; travers un enseignement authentique.</p></div>
+<div class="wc"><div class="icon">&#127919;</div><h3>Exp&eacute;rience terrain</h3><p>Des formateurs actifs qui partagent leur expertise concr&egrave;te.</p></div>
+</div>
+</div></section>
+
+<section class="blk wb"><div class="ctr" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div class="ey" style="margin-bottom:16px">L&rsquo;agence Wallis &middot; Marseille</div>
+<h2 style="font-family:var(--fd);font-weight:400;font-size:clamp(26px,4vw,38px);line-height:1.1;margin:0 0 20px">Une &eacute;cole qui n&rsquo;est pas <em style="font-style:italic;color:var(--accent)">qu&rsquo;</em>une &eacute;cole.</h2>
+<p style="color:var(--muted);margin:0 0 16px">Wallis est <strong style="color:var(--w)">la plus grande agence photo et vid&eacute;o du sud de la France</strong>, fond&eacute;e en 1989.</p>
+<p style="color:var(--muted);margin:0 0 24px">Les meilleurs stagiaires rejoignent <a href="https://www.wallis.fr/espace-photographe/" target="_blank" style="color:var(--accent);text-decoration:underline;text-underline-offset:4px">l&rsquo;espace contributeurs</a>.</p>
+<div class="ar2"><span class="arf">Olympique de Marseille</span><span class="arf">Marseille-Cassis</span><span class="arf">Grotte Cosquer</span><span class="arf">+ 100 clients corporate</span></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="aspect-ratio:3/4;background:var(--bg);border:1px solid var(--bdr);border-radius:var(--rs);overflow:hidden;position:relative"><img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=530&fit=crop&q=80" alt="Stade" loading="lazy"></div>
+<div style="aspect-ratio:3/4;background:var(--bg);border:1px solid var(--bdr);border-radius:var(--rs);overflow:hidden;position:relative;margin-top:24px"><img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&h=530&fit=crop&q=80" alt="Grotte" loading="lazy"></div>
+</div>
+</div></section>
+
+<section class="blk"><div class="ctr">
+<div class="sh"><div class="ey">Ils nous font confiance</div><h2>Avis de nos <em>stagiaires</em></h2></div>
+<div class="teg">
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; Laurent m&#8217;a appris &#224; voir la lumi&#232;re diff&#233;remment. En deux jours de studio, j&#8217;ai compris ce que trois ans de pratique solo ne m&#8217;avaient pas appris. &raquo;</p><div class="tea"><div class="tev">C</div><div class="ten">Caroline Duval</div></div></div>
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; La formation Premiere m&#8217;a rendu autonome sur le montage de mes vid&#233;os corporate. Le ratio th&#233;orie/pratique est parfait. &raquo;</p><div class="tea"><div class="tev">N</div><div class="ten">Nicolas Fabre</div></div></div>
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; Gr&#226;ce &#224; L&#233;a, mon site WordPress &#233;tait en ligne avant la fin du deuxi&#232;me jour. Hyper concret, z&#233;ro blabla. &raquo;</p><div class="tea"><div class="tev">A</div><div class="ten">Am&#233;lie Roche</div></div></div>
+</div>
+<div style="text-align:center;margin-top:40px"><a onclick="go('temoignages')" class="bo">Tous les t&eacute;moignages &rarr;</a></div>
+</div></section>
+
+<section class="ctab"><div class="ctr"><div class="ctac">
+<h2>Pr&ecirc;t &agrave; passer au niveau sup&eacute;rieur ?</h2>
+<p>R&eacute;servez 20 minutes avec Laurent. Gratuit, sans engagement.</p>
+<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative"><a onclick="go('rdv')" class="bf">S&rsquo;inscrire &rarr;</a><a onclick="go('contact')" class="bo">Nous contacter</a></div>
+</div></div></section>
+</main>
+
+<main id="p-formations" class="page"><div class="ctr">
+<div class="ph"><div class="ey">Se former</div><h1>Nos Formations</h1><p>Th&eacute;orie, pratique et d&eacute;veloppement professionnel.</p></div>
+<div class="ftbs"><span class="ftb active" data-cat="all">Toutes</span><span class="ftb" data-cat="photo">Photo</span><span class="ftb" data-cat="video">Vid&eacute;o</span><span class="ftb" data-cat="retouche">Retouche</span><span class="ftb" data-cat="web">Web</span><span class="ftb" data-cat="stage">Stages</span></div>
+
+<article class="fc" data-cat="photo"><div class="fc-img"><img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Studio photo professionnel" loading="lazy"></div><div class="fc-body"><div class="badge">2 jours</div><h3>Photo Studio</h3><p class="desc">Ma&icirc;triser l&rsquo;&eacute;clairage artificiel, le portrait studio et la direction de mod&egrave;le.</p><div class="pt">Au programme :</div><ul class="pl"><li>&Eacute;clairage : flash, continu, modeleurs</li><li>Direction artistique et posing</li><li>Workflow de production studio</li><li>Retouche rapide pour livraison</li></ul><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">2 jours</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">3 &ndash; 8</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">900&euro; <small>HT</small></span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="photo"><div class="fc-img"><img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&h=600&fit=crop&q=80" alt="Photographe en reportage" loading="lazy"></div><div class="fc-body"><div class="badge">2 jours</div><h3>Photo Reportage</h3><p class="desc">Capturer l&rsquo;instant, raconter une histoire en images.</p><div class="pt">Au programme :</div><ul class="pl"><li>Anticipation et r&eacute;activit&eacute; terrain</li><li>Cadrage narratif et storytelling</li><li>Gestion lumi&egrave;re naturelle</li><li>Tri et &eacute;diting sous pression</li></ul><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">2 jours</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">3 &ndash; 8</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">900&euro; <small>HT</small></span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="photo"><div class="fc-img"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&q=80" alt="Photographie smartphone" loading="lazy"></div><div class="fc-body"><div class="badge">1 jour</div><h3>Photographie Smartphone</h3><p class="desc">Cr&eacute;ez des images professionnelles avec votre smartphone.</p><div class="pt">Au programme :</div><ul class="pl"><li>Composition et cadrage mobile</li><li>Gestion de la lumi&egrave;re naturelle</li><li>Applications de retouche</li><li>Secrets pour des photos remarquables</li></ul><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">1 jour</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">4 &ndash; 10</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">150&euro;</span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="retouche"><div class="fc-img"><img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=800&h=600&fit=crop&q=80" alt="Retouche Lightroom" loading="lazy"></div><div class="fc-body"><div class="badge">5 jours</div><h3>Retouche Photoshop &amp; Lightroom</h3><p class="desc">Workflow complet : tri, d&eacute;veloppement RAW, retouche avanc&eacute;e, export.</p><div class="pt">Au programme :</div><ul class="pl"><li>Lightroom : catalogage, d&eacute;veloppement</li><li>Photoshop : retouche beaut&eacute;, compositing</li><li>Automatisation et presets</li><li>Export multi-formats</li></ul><div class="bonus">&rarr; + 1 an Adobe Photoshop &amp; Lightroom inclus</div><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">5 jours</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">3 &ndash; 8</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">1 490&euro; <small>HT</small></span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="video"><div class="fc-img"><img src="https://images.unsplash.com/photo-1579187707643-35646d22b596?w=800&h=600&fit=crop&q=80" alt="Tournage video" loading="lazy"></div><div class="fc-body"><div class="badge">2 jours</div><h3>Vid&eacute;o : Production</h3><p class="desc">De l&rsquo;&eacute;criture au tournage. Cadrage, son, lumi&egrave;re, direction.</p><div class="pt">Au programme :</div><ul class="pl"><li>Sc&eacute;narisation et storyboard</li><li>Cadrage et mouvement cam&eacute;ra</li><li>Prise de son et &eacute;clairage vid&eacute;o</li><li>Direction d&rsquo;interview</li></ul><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">2 jours</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">3 &ndash; 6</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">1 290&euro; <small>HT</small></span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="video"><div class="fc-img"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop&q=80" alt="Montage Premiere Pro" loading="lazy"></div><div class="fc-body"><div class="badge">5 jours</div><h3>Montage Adobe Premiere</h3><p class="desc">Ma&icirc;triser Premiere Pro : montage, &eacute;talonnage, mixage son, export.</p><div class="pt">Au programme :</div><ul class="pl"><li>Interface et organisation projet</li><li>Montage narratif et rythme</li><li>&Eacute;talonnage et correction couleur</li><li>Mixage audio et export</li></ul><div class="bonus">&rarr; + 1 an Adobe Premiere Pro inclus</div><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">5 jours</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">3 &ndash; 8</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">1 490&euro; <small>HT</small></span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="stage"><div class="fc-img"><img src="https://images.unsplash.com/photo-1520013817300-1f4c1cb245ef?w=800&h=600&fit=crop&q=80" alt="Stage boudoir" loading="lazy"></div><div class="fc-body"><div class="badge">1 jour</div><h3>Stage Boudoir &amp; Lightroom</h3><p class="desc">D&eacute;couvrez l&rsquo;univers d&eacute;licat de la photographie boudoir.</p><div class="pt">Au programme :</div><ul class="pl"><li>&Eacute;clairage intimiste</li><li>Direction et confiance mod&egrave;le</li><li>Post-traitement d&eacute;di&eacute;</li></ul><div class="bonus">&rarr; + 1 impression style tableau offerte</div><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">1 journ&eacute;e</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">2 &ndash; 6</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">250&euro; <small>TTC</small></span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="stage"><div class="fc-img"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=600&fit=crop&q=80" alt="Portrait studio" loading="lazy"></div><div class="fc-body"><div class="badge">1 jour</div><h3>Stage Portrait &amp; Photoshop</h3><p class="desc">Stage intensif : portrait en studio et retouche professionnelle.</p><div class="pt">Au programme :</div><ul class="pl"><li>Diriger un mod&egrave;le</li><li>G&eacute;rer l&rsquo;&eacute;clairage studio</li><li>Sublimer dans Photoshop</li></ul><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">1 journ&eacute;e</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">3 &ndash; 8</span></div><div class="fc-meta-item"><span class="label">Formateur</span><span class="value">Laurent Saccomano</span></div></div><div class="fc-ft"><span class="fp">200&euro;</span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<article class="fc" data-cat="web"><div class="fc-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80" alt="Creation web WordPress" loading="lazy"></div><div class="fc-body"><div class="badge">2 jours</div><h3>WordPress : Cr&eacute;ez votre Site</h3><p class="desc">Stage pratique pour cr&eacute;er votre site web professionnel avec WordPress.</p><div class="pt">Au programme :</div><ul class="pl"><li>Installation et h&eacute;bergement</li><li>Design et personnalisation</li><li>R&eacute;f&eacute;rencement SEO</li><li>Mise en ligne</li></ul><div class="fc-meta"><div class="fc-meta-item"><span class="label">Dur&eacute;e</span><span class="value">2 jours</span></div><div class="fc-meta-item"><span class="label">Capacit&eacute;</span><span class="value">4 &ndash; 10</span></div><div class="fc-meta-item"><span class="label">Formatrice</span><span class="value">L&eacute;a Tomasi</span></div></div><div class="fc-ft"><span class="fp">350&euro;</span><a onclick="go('rdv')" class="bf">Inscription &rarr;</a></div></div></article>
+
+<div class="wl"><div class="ey" style="margin-bottom:12px">Bient&ocirc;t disponible</div><h3>Formation <em>t&eacute;l&eacute;pilote drone</em> &mdash; CATS &amp; pratique STS</h3><p>Offre en pr&eacute;paration, conforme &agrave; la r&eacute;glementation EASA 2026.</p><form class="wlf" onsubmit="event.preventDefault();alert('Merci !')"><input type="email" placeholder="votre@email.com" required><button type="submit" class="bf">Me pr&eacute;venir</button></form></div>
+</div></main>
+
+<main id="p-tarifs" class="page"><div class="ctr">
+<div class="ph"><div class="ey">Nos prix</div><h1>Tarifs</h1><p>Des formations accessibles avec des bonus inclus.</p></div>
+<div class="ts"><div class="ts-t">Photographie</div><div class="tr"><div class="tr-i"><h4>Photo Studio</h4><span>2 jours &middot; Laurent</span></div><div class="tr-p">900&euro;</div></div><div class="tr"><div class="tr-i"><h4>Photo Reportage</h4><span>2 jours &middot; Laurent</span></div><div class="tr-p">900&euro;</div></div><div class="tr"><div class="tr-i"><h4>Photographie Smartphone</h4><span>1 jour &middot; Laurent</span></div><div class="tr-p">150&euro;</div></div><div class="tr"><div class="tr-i"><h4>Stage Portrait &amp; Photoshop</h4><span>1 jour &middot; Laurent</span></div><div class="tr-p">200&euro;</div></div><div class="tr"><div class="tr-i"><h4>Stage Boudoir &amp; Lightroom</h4><span>1 jour &middot; Laurent</span><span class="bt">+ 1 impression offerte</span></div><div class="tr-p">250&euro;</div></div></div>
+<div class="ts"><div class="ts-t">Retouche</div><div class="tr"><div class="tr-i"><h4>Photoshop &amp; Lightroom</h4><span>5 jours &middot; Laurent</span><span class="bt">+ 1 an Adobe inclus</span></div><div class="tr-p">1 490&euro;</div></div></div>
+<div class="ts"><div class="ts-t">Vid&eacute;o</div><div class="tr"><div class="tr-i"><h4>Vid&eacute;o Production</h4><span>2 jours &middot; Laurent</span></div><div class="tr-p">1 290&euro;</div></div><div class="tr"><div class="tr-i"><h4>Montage Adobe Premiere</h4><span>5 jours &middot; Laurent</span><span class="bt">+ 1 an Adobe inclus</span></div><div class="tr-p">1 490&euro;</div></div></div>
+<div class="ts"><div class="ts-t">Web &amp; Digital</div><div class="tr"><div class="tr-i"><h4>WordPress : Cr&eacute;ez votre Site</h4><span>2 jours &middot; L&eacute;a Tomasi</span></div><div class="tr-p">350&euro;</div></div></div>
+</div></main>
+
+<main id="p-blog" class="page"><div class="ctr">
+<div class="ph"><div class="ey">Notre blog</div><h1>Photo, Vid&eacute;o &amp; M&eacute;tier</h1><p>Conseils, techniques et coulisses.</p></div>
+<div class="cg">
+<div class="bc2"><div class="bc2-img"><img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=600&h=375&fit=crop&q=80" alt="Studio photo" loading="lazy"></div><div class="bc2-body"><div class="bc2-meta">15 avr. 2026 &middot; 5 min</div><h3>5 erreurs de d&#233;butant en photo studio</h3><p>Flash trop puissant, fond mal &#233;clair&#233;, mod&#232;le mal dirig&#233;&#8230; Voici les erreurs que l&#8217;on voit le plus souvent chez les photographes qui d&#233;butent en studio, et comment les corriger d&#232;s votre prochaine s&#233;ance.</p><span class="bc2-lk">Lire l&#8217;article &#8594;</span></div></div>
+<div class="bc2"><div class="bc2-img"><img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=600&h=375&fit=crop&q=80" alt="Retouche photo" loading="lazy"></div><div class="bc2-body"><div class="bc2-meta">8 avr. 2026 &middot; 4 min</div><h3>Lightroom vs Photoshop : lequel utiliser ?</h3><p>Les deux logiciels font partie de la suite Adobe, mais ils ne servent pas du tout &#224; la m&#234;me chose. D&#233;veloppement RAW, retouche locale, compositing&#160;: on vous explique quand utiliser l&#8217;un, quand utiliser l&#8217;autre, et quand combiner les deux.</p><span class="bc2-lk">Lire l&#8217;article &#8594;</span></div></div>
+<div class="bc2"><div class="bc2-img"><img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&h=375&fit=crop&q=80" alt="Stade football" loading="lazy"></div><div class="bc2-body"><div class="bc2-meta">1 avr. 2026 &middot; 6 min</div><h3>Comment Wallis couvre un match de l&#8217;OM</h3><p>Trois photographes, huit heures de couverture, des milliers de clich&#233;s et une livraison avant le coup de sifflet final. D&#233;couvrez les coulisses d&#8217;un reportage sportif avec l&#8217;&#233;quipe Wallis au V&#233;lodrome.</p><span class="bc2-lk">Lire l&#8217;article &#8594;</span></div></div>
+</div>
+</div></main>
+
+<main id="p-temoignages" class="page"><div class="ctr">
+<div class="ph"><div class="ey">Vos retours</div><h1>T&eacute;moignages</h1><p>La satisfaction de nos stagiaires.</p></div>
+<div class="teg">
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; Laurent m&#8217;a appris &#224; voir la lumi&#232;re diff&#233;remment. En deux jours de studio, j&#8217;ai compris ce que trois ans de pratique solo ne m&#8217;avaient pas appris. &raquo;</p><div class="tea"><div class="tev">C</div><div class="ten">Caroline Duval</div></div></div>
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; La formation Premiere m&#8217;a rendu autonome sur le montage de mes vid&#233;os corporate. Le ratio th&#233;orie/pratique est parfait. &raquo;</p><div class="tea"><div class="tev">N</div><div class="ten">Nicolas Fabre</div></div></div>
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; Le stage boudoir m&#8217;a permis de d&#233;couvrir un univers que je n&#8217;aurais jamais os&#233; explorer seule. Approche respectueuse, r&#233;sultat magnifique. &raquo;</p><div class="tea"><div class="tev">S</div><div class="ten">Sandra Music</div></div></div>
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; Je cherchais une formation courte pour lancer mon site de photographe. L&#233;a m&#8217;a guid&#233; pas &#224; pas, et j&#8217;ai mon portfolio en ligne. &raquo;</p><div class="tea"><div class="tev">M</div><div class="ten">Mathieu Girard</div></div></div>
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; Apr&#232;s la formation reportage, Laurent m&#8217;a propos&#233; de contribuer &#224; la banque d&#8217;images Wallis. Aujourd&#8217;hui je vends mes photos via l&#8217;agence. &raquo;</p><div class="tea"><div class="tev">J</div><div class="ten">Julien Pasquier</div></div></div>
+<div class="tec"><div class="tes">&starf;&starf;&starf;&starf;&starf;</div><p class="teq">&laquo; On a couvert un vrai &#233;v&#233;nement sportif pendant la formation. Pas de simulation, du terrain pur. C&#8217;est exactement ce que je cherchais. &raquo;</p><div class="tea"><div class="tev">P</div><div class="ten">Philippe Arnaud</div></div></div>
+</div>
+</div></main>
+
+<main id="p-about" class="page"><div class="ctr">
+<div class="ph"><div class="ey">Notre histoire</div><h1>&Agrave; propos</h1><p>L&rsquo;extension formation de la plus grande agence photo du sud de la France.</p></div>
+<div style="border:1px solid var(--bdr);border-radius:var(--r);padding:40px;margin-bottom:60px;background:var(--bg2)">
+<h2 style="font-family:var(--fd);font-size:28px;margin:0 0 20px">Notre histoire</h2>
+<p style="color:var(--muted);margin:0 0 16px">Wallis Images Acad&eacute;mie est n&eacute;e de la passion de transmettre les savoir-faire de l&rsquo;image professionnelle. Fond&eacute;e par Laurent Saccomano, photographe et pilote de drone professionnel, notre acad&eacute;mie s&rsquo;est donn&eacute;e pour mission de former la nouvelle g&eacute;n&eacute;ration de cr&eacute;ateurs visuels.</p>
+<p style="color:var(--muted);margin:0 0 16px">Du smartphone &agrave; la post-production, nous couvrons tous les aspects de la cr&eacute;ation d&rsquo;image moderne. Nos formations s&rsquo;adressent aux d&eacute;butants comme aux professionnels.</p>
+<p style="color:var(--muted);margin:0">Avec une approche pratique et des formateurs exp&eacute;riment&eacute;s, nous avons form&eacute; des centaines de stagiaires qui exercent aujourd&rsquo;hui dans le monde de l&rsquo;image.</p>
+</div>
+<div class="sh"><div class="ey">Notre &eacute;quipe</div><h2>Des professionnels <em>passionn&eacute;s</em></h2><p>Au service de votre formation</p></div>
+<div class="team-grid" style="margin-bottom:80px">
+<div class="team-card"><div class="team-avatar">LS</div><div class="team-info"><h3>Laurent Saccomano</h3><div class="role">Fondateur &amp; Formateur Principal</div><p>Photographe professionnel et pilote de drone certifi&eacute;. Plus de 15 ans d&rsquo;exp&eacute;rience. Sp&eacute;cialiste en photographie de portrait et reportage.</p></div></div>
+<div class="team-card"><div class="team-avatar">LT</div><div class="team-info"><h3>L&eacute;a Tomasi</h3><div class="role">Formatrice Web &amp; Digital</div><p>Experte en cr&eacute;ation digitale et d&eacute;veloppement web. Sp&eacute;cialis&eacute;e dans WordPress, le montage vid&eacute;o et la cr&eacute;ation de contenu pour les r&eacute;seaux sociaux.</p></div></div>
+</div>
+<div class="sh"><div class="ey">Nos valeurs</div><h2>Les principes qui guident notre enseignement</h2></div>
+<div class="wg">
+<div class="wc"><div class="icon">&#128247;</div><h3>Excellence technique</h3><p>Comp&eacute;tences de haut niveau avec du mat&eacute;riel professionnel.</p></div>
+<div class="wc"><div class="icon">&#128101;</div><h3>P&eacute;dagogie sur mesure</h3><p>Petits groupes pour un accompagnement personnalis&eacute;.</p></div>
+<div class="wc"><div class="icon">&hearts;</div><h3>Passion partag&eacute;e</h3><p>Transmettre notre passion &agrave; travers un enseignement authentique.</p></div>
+<div class="wc"><div class="icon">&#127919;</div><h3>Exp&eacute;rience terrain</h3><p>Des formateurs actifs qui partagent leur expertise concr&egrave;te.</p></div>
+</div>
+<div style="border-top:1px solid var(--bdr);padding-top:60px;margin-top:60px;text-align:center">
+<div class="sh"><div class="ey">L&rsquo;agence</div><h2>Wallis, depuis <em>1989</em></h2></div>
+<div class="ar2" style="justify-content:center"><span class="arf">Olympique de Marseille</span><span class="arf">Marseille-Cassis</span><span class="arf">Grotte Cosquer</span><span class="arf">Corporate</span></div>
+<div style="margin-top:32px"><a href="https://www.wallis.fr" target="_blank" class="bo">D&eacute;couvrir l&rsquo;agence Wallis &nearr;</a></div>
+</div>
+</div></main>
+
+<main id="p-contact" class="page"><div class="ctr">
+<div class="ph"><div class="ey">Nous contacter</div><h1>Prenons contact</h1><p>Une question, un besoin ?</p></div>
+<div class="cog">
+<div>
+<div class="cob"><h3>Adresse</h3><p>R&eacute;sidence Les Blacassins<br>141 avenue Paul Sirvent<br>13380 Plan-de-Cuques</p><div class="ml"><a href="#">Google Maps</a><a href="#">Plans</a><a href="#">Waze</a></div></div>
+<div class="cob"><h3>T&eacute;l&eacute;phone</h3><p><a href="tel:0491347515">04 91 34 75 15</a></p></div>
+<div class="cob"><h3>Email</h3><p><a href="mailto:laurent@wallis.com">laurent@wallis.com</a></p></div>
+</div>
+<div>
+<!-- TALLY EMBED : remplace TON_TALLY_FORM_ID par ton vrai ID -->
+<!-- Pour le trouver : tally.so > cr&eacute;e un form > Share > Embed > copie l'ID dans l'URL -->
+<iframe data-tally-src="https://tally.so/embed/TON_TALLY_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Contact Wallis Images" style="border-radius:var(--r);background:var(--bg2);border:1px solid var(--bdr)"></iframe>
+<script>var d=document,s=d.createElement("script");s.src="https://tally.so/widgets/embed.js";d.body.appendChild(s);</script>
+<p style="font-size:12px;color:var(--muted);margin-top:12px;text-align:center">Les r&eacute;ponses arrivent directement sur votre Gmail.</p>
+</div>
+</div>
+</div></main>
+
+<main id="p-rdv" class="page"><div class="ctr">
+<div class="ph"><div class="ey">R&eacute;servation</div><h1>Prenez rendez-vous</h1><p>Choisissez votre cr&eacute;neau et r&eacute;servez en ligne. Confirmation imm&eacute;diate par email.</p></div>
+
+<!-- CHOIX TYPE -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:600px;margin:0 auto 40px">
+<div style="border:1px solid var(--accent);border-radius:var(--r);padding:24px;text-align:center;cursor:pointer;background:var(--bg2)" onclick="document.getElementById('cal-formation').style.display='block';document.getElementById('cal-decouverte').style.display='none';this.style.borderColor='var(--accent)';this.nextElementSibling.style.borderColor='var(--bdr)'">
+<div style="font-size:28px;margin-bottom:8px">&#128247;</div>
+<h3 style="font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:0 0 4px">Formation</h3>
+<p style="font-size:13px;color:var(--muted);margin:0">Inscription &amp; renseignements</p>
+</div>
+<div style="border:1px solid var(--bdr);border-radius:var(--r);padding:24px;text-align:center;cursor:pointer" onclick="document.getElementById('cal-decouverte').style.display='block';document.getElementById('cal-formation').style.display='none';this.style.borderColor='var(--accent)';this.previousElementSibling.style.borderColor='var(--bdr)'">
+<div style="font-size:28px;margin-bottom:8px">&#128222;</div>
+<h3 style="font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:0 0 4px">Appel d&eacute;couverte</h3>
+<p style="font-size:13px;color:var(--muted);margin:0">20 min avec Laurent</p>
+</div>
+</div>
+
+<!-- CAL.COM EMBED FORMATION -->
+<!-- Pour configurer : -->
+<!-- 1. Cr&eacute;e un compte sur cal.com -->
+<!-- 2. Connecte le Google Calendar de Laurent -->
+<!-- 3. Cr&eacute;e un &eacute;v&eacute;nement "Inscription Formation" (ex: 30 min) -->
+<!-- 4. Cr&eacute;e un &eacute;v&eacute;nement "Appel D&eacute;couverte" (ex: 20 min) -->
+<!-- 5. Remplace TON_USER/inscription-formation et TON_USER/appel-decouverte par tes vrais slugs -->
+<div id="cal-formation" style="border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;min-height:600px;background:var(--bg2)">
+<iframe src="https://cal.com/TON_USER/inscription-formation?theme=dark" width="100%" height="700" frameborder="0" style="border:0;min-height:600px" loading="lazy"></iframe>
+</div>
+
+<div id="cal-decouverte" style="border:1px solid var(--bdr);border-radius:var(--r);overflow:hidden;min-height:600px;background:var(--bg2);display:none">
+<iframe src="https://cal.com/TON_USER/appel-decouverte?theme=dark" width="100%" height="700" frameborder="0" style="border:0;min-height:600px" loading="lazy"></iframe>
+</div>
+
+<div style="margin-top:32px;text-align:center;padding:24px;border:1px solid var(--bdr);border-radius:var(--r);background:var(--bg2)">
+<p style="color:var(--muted);font-size:14px;margin:0 0 8px">&#9989; Confirmation imm&eacute;diate par email &middot; &#128197; Ajout automatique au calendrier de Laurent &middot; &#128232; Rappel 24h avant</p>
+<p style="color:var(--muted);font-size:13px;margin:0">Vous pouvez aussi appeler directement le <a href="tel:0491347515" style="color:var(--accent)">04 91 34 75 15</a></p>
+</div>
+
+</div></main>
+
+<footer><div class="ctr">
+<div class="fg2">
+<div class="fb"><h4>Wallis <em>Images</em> Acad&eacute;mie</h4><p>L&rsquo;extension formation de <a href="https://www.wallis.fr" target="_blank" style="color:var(--accent)">l&rsquo;agence Wallis</a>, depuis 1989. Marseille.</p></div>
+<div class="fc2"><h5>Formations</h5><ul><li><a onclick="go('formations')">Photo studio</a></li><li><a onclick="go('formations')">Photo reportage</a></li><li><a onclick="go('formations')">Retouche PS/LR</a></li><li><a onclick="go('formations')">Vid&eacute;o prod</a></li><li><a onclick="go('formations')">Montage Premiere</a></li><li><a onclick="go('formations')">WordPress</a></li></ul></div>
+<div class="fc2"><h5>&Eacute;cosyst&egrave;me Wallis</h5><ul><li><a href="https://www.wallis.fr" target="_blank">L&rsquo;agence Wallis &nearr;</a></li><li><a href="https://www.wallis.fr/prestations/" target="_blank">Prestations &nearr;</a></li><li><a href="https://www.wallis.fr/espace-photographe/" target="_blank">Devenir contributeur &nearr;</a></li><li><a onclick="go('about')">L&rsquo;&eacute;quipe</a></li></ul></div>
+<div class="fc2"><h5>Contact</h5><ul><li>Laurent Saccomano</li><li><a href="tel:0491347515">04 91 34 75 15</a></li><li><a href="mailto:laurent@wallis.com">laurent@wallis.com</a></li><li><a onclick="go('contact')">Nous contacter &rarr;</a></li></ul></div>
+</div>
+<div class="fbot"><div>&copy; 2026 Wallis Images Acad&eacute;mie &middot; SIRET 352 555 833 00057</div><div><a href="#">Mentions l&eacute;gales</a> &middot; <a href="#">CGV</a> &middot; <a href="#">Confidentialit&eacute;</a></div></div>
+</div></footer>
+
+<script>
+function go(p){document.querySelectorAll('.page').forEach(function(e){e.classList.remove('active')});var el=document.getElementById('p-'+p);if(el){el.classList.add('active');window.scrollTo(0,0)}document.querySelectorAll('.nl a').forEach(function(a){a.classList.remove('active');if(a.dataset.p===p)a.classList.add('active')})}
+document.querySelectorAll('.ftbs .ftb').forEach(function(tab){tab.addEventListener('click',function(){var cat=this.dataset.cat;this.parentElement.querySelectorAll('.ftb').forEach(function(t){t.classList.remove('active')});this.classList.add('active');document.querySelectorAll('#p-formations .fc').forEach(function(card){if(cat==='all'||card.dataset.cat===cat){card.style.display='grid'}else{card.style.display='none'}})})});
+</script>
+</body>
+</html>
